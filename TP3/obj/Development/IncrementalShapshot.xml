@@ -1,0 +1,278 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>TP1</Database>
+    <Server>DESKTOP-KGSM30P</Server>
+    <ConnectionString>Data Source=DESKTOP-KGSM30P;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>FijHJNS79i2YOEoUKinbmkawO9U=08/07/2021 19:59:0415/06/2021 22:16:28</TimeStamp>
+        <ID>
+          <String>TP1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>vcuHROW8r8XwmylDibRfv7BrXz4=09/07/2021 12:17:3809/07/2021 12:16:16</TimeStamp>
+        <ID>
+          <String>TP4</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>mWvO92JhwpxH9/3USoeIKs3GpJI=15/06/2021 22:16:5715/06/2021 22:16:56</TimeStamp>
+        <ID>
+          <String>TP1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>07WgBYHfyDpb829TnLT/po//aFI=09/07/2021 12:16:2809/07/2021 12:16:28</TimeStamp>
+        <ID>
+          <String>TP4</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>TxF/c9eX5ljAAf5Uc7GDEVcssVQ=09/07/2021 18:35:1509/07/2021 18:35:15</TimeStamp>
+        <ID>
+          <String>TP42</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>XB+adJ01o14w2AF5RQVAMaTBZgQ=11/07/2021 13:29:3011/07/2021 13:29:30</TimeStamp>
+        <ID>
+          <String>TP43</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>plIEa2l7ErljqFAh+apsptzSa9k=11/07/2021 20:27:5811/07/2021 20:27:58</TimeStamp>
+        <ID>
+          <String>TP44</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>qLBZdJZRVYnabPNZ+q4DrDn76yc=12/07/2021 17:06:5812/07/2021 17:06:57</TimeStamp>
+        <ID>
+          <String>table5</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>auJZTr26Mg1UP/4Anmc6hCc1LSU=15/06/2021 22:20:0315/06/2021 22:18:01</TimeStamp>
+        <ID>
+          <String>Dimension Account</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rzrzNXU1hMWhHAGYNRf+FZP1B4Y=15/06/2021 22:20:1515/06/2021 22:18:01</TimeStamp>
+        <ID>
+          <String>Dimension Card</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LmG2ORkdOFGSmELhgyhUImHlb/s=15/06/2021 22:20:2615/06/2021 22:18:01</TimeStamp>
+        <ID>
+          <String>Dimension Bank</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tjb7cfeimcjyg2DwgK8Szm0dscs=15/06/2021 22:20:5815/06/2021 22:18:01</TimeStamp>
+        <ID>
+          <String>Dimension Custommer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>prZKHTsDjy6H+6jLmhoVeo1F910=15/06/2021 22:20:3815/06/2021 22:18:01</TimeStamp>
+        <ID>
+          <String>Dimension Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>H9K3YHoejSCck4BnOfAoZHVfJgQ=15/06/2021 22:21:2715/06/2021 22:18:02</TimeStamp>
+        <ID>
+          <String>Dimension Region</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>X6A+5lBkwdIrdzVXo3C49k6x7Zk=15/06/2021 22:21:1315/06/2021 22:18:02</TimeStamp>
+        <ID>
+          <String>Dimension District</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2Br8Iqpk6WylcSAgZteoMl8WL14=15/06/2021 22:21:4315/06/2021 22:18:02</TimeStamp>
+        <ID>
+          <String>Dimension Loan Detail</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2GqXQheXB1jXUHh08GthV60J+8o=15/06/2021 22:21:5715/06/2021 22:18:02</TimeStamp>
+        <ID>
+          <String>Dimension Symbol Order</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>kb+s+XMzHvbrxGRLMRwTlchH9SY=15/06/2021 22:22:0715/06/2021 22:18:02</TimeStamp>
+        <ID>
+          <String>Dimension Symbol Trans</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>AYprRZYknRwrxZxWOY0bOgukwYE=15/06/2021 22:22:1715/06/2021 22:18:02</TimeStamp>
+        <ID>
+          <String>Dimension Trans Detail</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>wIIYaQgiS/+g1xCVxNQMm/5edxk=15/06/2021 22:33:5715/06/2021 22:18:00Y0R1FH1/Bn4n+Uj6WEOndk2HDn0=15/06/2021 22:33:5615/06/2021 22:18:01</TimeStamp>
+        <ID>
+          <String>TP1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>qrjujX/xwb7mfyMcnd8aTIyiWmg=09/07/2021 18:54:2009/07/2021 18:52:39</TimeStamp>
+        <ID>
+          <String>Dimension Account</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>Qzz0kQs5YCJWr0kwgmnmN2KPHo8=12/07/2021 16:51:4711/07/2021 13:30:23</TimeStamp>
+        <ID>
+          <String>Newtable3</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>URfvNYHrcAIl+GQXxNkLDGZ2Xsg=12/07/2021 16:51:4711/07/2021 20:56:17</TimeStamp>
+        <ID>
+          <String>Newtable3 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>mKSvXXIGwaI4C8LX2AVPYaWeenM=12/07/2021 17:35:3112/07/2021 17:07:30</TimeStamp>
+        <ID>
+          <String>arbolDecision-transType</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>oR7iyFddm4O1eB6v4F/qYoJWF3c=12/07/2021 17:39:3012/07/2021 17:37:58</TimeStamp>
+        <ID>
+          <String>arbolDecision-LoanStatusXRegion</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>2lu+UfvSWYpLJIqct85H0SBLMvI=12/07/2021 17:42:3912/07/2021 17:41:57</TimeStamp>
+        <ID>
+          <String>Cluster-LoanStatus</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>I6D8iYvUvxSHOHW2dRUmClldzwA=12/07/2021 17:50:3712/07/2021 17:50:01</TimeStamp>
+        <ID>
+          <String>Neives-LoanStatus</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>gMF0YVxwYM9q1KtcOU6nk+R3e9w=12/07/2021 21:33:3712/07/2021 17:54:53</TimeStamp>
+        <ID>
+          <String>RedNeuronal-LoanStatus</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>nY9pprXYa63GHPQiwz5iZzEB4lY=12/07/2021 18:23:0912/07/2021 18:20:46</TimeStamp>
+        <ID>
+          <String>Cluster-LoanMount</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>g3lQHAw540MsAectrA5ixXBvj74=12/07/2021 18:30:3212/07/2021 18:24:49</TimeStamp>
+        <ID>
+          <String>ArbolDeCISION-AMOUNTLOAN</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>W/JXm0M0Y/BIIhRn5sjFHmKy0Lo=13/07/2021 20:15:4209/07/2021 12:16:54</TimeStamp>
+        <ID>
+          <String>Newtable</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>YNRzLD8coSpdDwIcArSOo7KzCgA=13/07/2021 20:17:2011/07/2021 20:28:25</TimeStamp>
+        <ID>
+          <String>Newtable4</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>mvrcShgTgNjTNlnklfSKLj2caQw=13/07/2021 20:17:4012/07/2021 16:54:16</TimeStamp>
+        <ID>
+          <String>Newtable4 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>MuMIKVCK20IfUvJluAdOpJ3vRVo=13/07/2021 20:19:5809/07/2021 12:31:33</TimeStamp>
+        <ID>
+          <String>Newtable 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>vG4fDk3i6K8cNQUhVoukP/l0a9k=13/07/2021 20:20:1509/07/2021 18:35:43</TimeStamp>
+        <ID>
+          <String>Newtable2</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>KUl38lyUJqf8d45YIpuWsgjjawM=12/06/2021 18:24:5412/06/2021 18:24:54</TimeStamp>
+      <ID>
+        <String>TP1</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2021-07-13T23:20:41.913333Z</LastDeployed>
+</DeploymentSnapshot>

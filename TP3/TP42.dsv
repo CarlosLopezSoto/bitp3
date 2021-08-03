@@ -1,0 +1,109 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6f4634cd-64c7-46a6-af89-e6f8c210bddb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TP42</ID>
+  <Name>TP42</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>TP4</DataSourceID>
+  <Schema>
+    <xs:schema id="TP42" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="TP42" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="27b65dbd-3861-4810-9eef-edda027a6b3f">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_newtable2" msprop:design-time-name="130a5e32-e4a8-47d8-945b-21d7097bb749" msprop:DbTableName="newtable2" msprop:FriendlyName="newtable2" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="4c1732bd-9b18-46b4-807f-f739b5e7652a" msprop:DbColumnName="ID" msprop:FriendlyName="ID" type="xs:int" />
+                  <xs:element name="Amount" msprop:design-time-name="80365ccd-ed9d-4904-83ed-048cc1fae8e5" msprop:DbColumnName="Amount" msprop:FriendlyName="Amount" type="xs:double" />
+                  <xs:element name="LoanPayments" msprop:design-time-name="4280f831-693e-45e1-af5d-e084504ded59" msprop:DbColumnName="LoanPayments" msprop:FriendlyName="LoanPayments" type="xs:double" />
+                  <xs:element name="LoanStatus" msprop:design-time-name="20d609c9-8c9f-486c-9bf6-97e29f5d60b5" msprop:DbColumnName="LoanStatus" msprop:FriendlyName="LoanStatus">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LoanDuration" msprop:design-time-name="d07bd100-b3db-44fc-bb31-0e7e18c968b7" msprop:DbColumnName="LoanDuration" msprop:FriendlyName="LoanDuration" type="xs:int" />
+                  <xs:element name="districtName" msprop:design-time-name="4a46937e-a237-42fe-a113-a3d22bd20c70" msprop:DbColumnName="districtName" msprop:FriendlyName="districtName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NumberOfPop" msprop:design-time-name="07c86a96-1387-49e6-af00-0632c8b389a6" msprop:DbColumnName="NumberOfPop" msprop:FriendlyName="NumberOfPop" type="xs:int" />
+                  <xs:element name="NoOfCity" msprop:design-time-name="ea8627f1-a82c-4f00-ae02-867727b3b518" msprop:DbColumnName="NoOfCity" msprop:FriendlyName="NoOfCity" type="xs:int" />
+                  <xs:element name="NoMunip" msprop:design-time-name="931b9695-d676-4e0a-bcfe-30f4718429ff" msprop:DbColumnName="NoMunip" msprop:FriendlyName="NoMunip" type="xs:int" />
+                  <xs:element name="AverangeSalary" msprop:design-time-name="65b33cc5-bd52-467e-9587-75029df77dec" msprop:DbColumnName="AverangeSalary" msprop:FriendlyName="AverangeSalary" type="xs:double" />
+                  <xs:element name="regionName" msprop:design-time-name="10faedc4-07f0-4153-9f17-d34ea8ff3373" msprop:DbColumnName="regionName" msprop:FriendlyName="regionName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NoDay" msprop:design-time-name="7fff3b62-d6f5-4f08-878a-bcda5823706b" msprop:DbColumnName="NoDay" msprop:FriendlyName="NoDay" type="xs:int" />
+                  <xs:element name="NoMonth" msprop:design-time-name="66ac6dcd-731a-4733-ac09-d5e445678c79" msprop:DbColumnName="NoMonth" msprop:FriendlyName="NoMonth" type="xs:int" />
+                  <xs:element name="NoYear" msprop:design-time-name="ba99937b-9a27-4501-8ff4-c88f0c0c537e" msprop:DbColumnName="NoYear" msprop:FriendlyName="NoYear" type="xs:int" />
+                  <xs:element name="DayOfWeek" msprop:design-time-name="6ef1cd03-f7e8-47dd-8fbb-a4b9b75b7beb" msprop:DbColumnName="DayOfWeek" msprop:FriendlyName="DayOfWeek" type="xs:int" />
+                  <xs:element name="Trimester" msprop:design-time-name="7a0ad7f3-84d8-4d34-8b64-165e95ceae1b" msprop:DbColumnName="Trimester" msprop:FriendlyName="Trimester" type="xs:int" />
+                  <xs:element name="AccountID" msprop:design-time-name="d14609b8-8cb4-4bc0-859e-ba13788d7f09" msprop:DbColumnName="AccountID" msprop:FriendlyName="AccountID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CustommerBirth" msprop:design-time-name="a96bdb0e-e0dc-4fd6-a22e-f75428c46f3a" msprop:DbColumnName="CustommerBirth" msprop:FriendlyName="CustommerBirth" type="xs:dateTime" />
+                  <xs:element name="CustommerSex" msprop:design-time-name="0c6435be-bd35-4315-b872-4ae7b703e1d4" msprop:DbColumnName="CustommerSex" msprop:FriendlyName="CustommerSex">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <TP42 xmlns="" />
+  </Schema>
+</DataSourceView>

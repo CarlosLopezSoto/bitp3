@@ -1,0 +1,401 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="24b067c5-ca91-4393-923d-09b6a4a71275" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dimension Account</ID>
+  <Name>Dimension Account</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>MDXFilterComponent</Name>
+      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition" /&gt;&lt;/Filter&gt;</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="1259ce8c-2527-491a-b4c0-59b1c0c48040">
+    <DataSourceID>.</DataSourceID>
+    <CubeID>TP1</CubeID>
+    <CubeDimensionID>Dimension Account</CubeDimensionID>
+    <Filter></Filter>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="64d1deb9-a668-46c5-b78b-a105511d93c5">
+      <ID>Account ID</ID>
+      <Name>Account ID</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="8c6322aa-046a-4ca3-8812-75fb6407cc10">
+        <CubeID>TP1</CubeID>
+        <CubeDimensionID>Dimension Account</CubeDimensionID>
+        <AttributeID>Account ID</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Key</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fe78232b-1d89-4043-8e2a-4363f14b112e">
+      <ID>Amount</ID>
+      <Name>Amount</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="f2474585-d1cd-4adb-9f28-3323a6d0e3de">
+        <MeasureID>Amount</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="03efee81-9fcb-461f-8c49-3d9d1c90dd62">
+      <ID>Avg Amount</ID>
+      <Name>Avg Amount</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="219e3604-8f3f-4f7d-abe3-6ea35c4bd1ec">
+        <MeasureID>Avg Amount</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8dd558c5-1917-4289-b527-03345386f267">
+      <ID>Avg Amount - Fac Transaction</ID>
+      <Name>Avg Amount - Fac Transaction</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="557fb4ac-2a2d-4f32-83b6-9ec862e2abf2">
+        <MeasureID>Avg Amount - Fac Transaction</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f0e65c62-cda8-437f-9fde-a0e8a82d0020">
+      <ID>Count Of Order</ID>
+      <Name>Count Of Order</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="68e004c0-fd60-4f9c-a701-6e7c4aff9c14">
+        <MeasureID>Count Of Order</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c8653471-7217-4f7b-ad32-6194af45c22d">
+      <ID>Count Of Transaction</ID>
+      <Name>Count Of Transaction</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="bc3e0ab3-8dac-4088-bcd7-5ef31e57659d">
+        <MeasureID>Count Of Transaction</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c7d1436d-81c6-45cf-a9be-7c9ed5004801">
+      <ID>Max Amount</ID>
+      <Name>Max Amount</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="f8d0cc2a-edfb-45bc-920d-aa378599fab7">
+        <MeasureID>Max Amount</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5d2995c9-e02e-4ab2-a57f-68980db7982b">
+      <ID>Min Amount</ID>
+      <Name>Min Amount</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="eb5cee23-faf0-4f6c-b122-87a8052899a6">
+        <MeasureID>Min Amount</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="aa854cd3-f526-4bbc-bdb1-760bb98e94dc">
+      <ID>Payments</ID>
+      <Name>Payments</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="f7f52726-0bb2-4d17-97c8-94b14c2785d9">
+        <MeasureID>Payments</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2068acb0-da57-4e0a-ae4d-36fe3e735039">
+      <ID>Sum Amount</ID>
+      <Name>Sum Amount</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="8bbb9960-ecf6-492b-b315-5386555d8f5d">
+        <MeasureID>Sum Amount</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="1f6e00a8-2c74-43fe-b125-6719ff21bee1">
+      <Annotations>
+        <Annotation>
+          <Name>MDXFilterComponent</Name>
+          <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition" /&gt;&lt;/Filter&gt;</Value>
+        </Annotation>
+      </Annotations>
+      <ID>Dimension Loan Detail</ID>
+      <Name>Dimension Loan Detail</Name>
+      <SourceMeasureGroup dwd:design-time-name="c8abd250-c2d0-4e1d-a0df-b9e955ef25d0">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>TP1</CubeID>
+        <MeasureGroupID>Fac Loan</MeasureGroupID>
+        <RefreshInterval>PT1S</RefreshInterval>
+        <Filter></Filter>
+      </SourceMeasureGroup>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c9720cdc-0a37-4363-bd66-3e5213be6cc8">
+          <ID>Duration</ID>
+          <Name>Duration</Name>
+          <Type>Long</Type>
+          <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="99fe45b5-275b-4fd6-aa7a-61056e1544af">
+            <CubeID>TP1</CubeID>
+            <CubeDimensionID>Dimension Loan Detail</CubeDimensionID>
+            <AttributeID>Duration</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Continuous</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="89ee4ccb-67f5-4f6c-a349-f183ad710b67">
+          <ID>Loan Detail ID</ID>
+          <Name>Loan Detail ID</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="30ec778d-16a5-47f3-ba8f-3cb4018c018c">
+            <CubeID>TP1</CubeID>
+            <CubeDimensionID>Dimension Loan Detail</CubeDimensionID>
+            <AttributeID>Loan Detail ID</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Key</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1e4dcd02-0215-4504-9946-b52fd33f8885">
+          <ID>Status</ID>
+          <Name>Status</Name>
+          <Type>Text</Type>
+          <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="7c4c8715-43f4-456b-8081-5f4b9fd64557">
+            <CubeID>TP1</CubeID>
+            <CubeDimensionID>Dimension Loan Detail</CubeDimensionID>
+            <AttributeID>Status</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discrete</Content>
+        </Column>
+      </Columns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="319b5b49-9ec5-4c9f-ab36-0e96251a75f1">
+      <Annotations>
+        <Annotation>
+          <Name>MDXFilterComponent</Name>
+          <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition" /&gt;&lt;/Filter&gt;</Value>
+        </Annotation>
+      </Annotations>
+      <ID>Dimension Trans Detail</ID>
+      <Name>Dimension Trans Detail</Name>
+      <SourceMeasureGroup dwd:design-time-name="0fefa415-5d98-4f9e-8e20-3b47865027a5">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>TP1</CubeID>
+        <MeasureGroupID>Fac Transaction</MeasureGroupID>
+        <RefreshInterval>PT1S</RefreshInterval>
+        <Filter></Filter>
+      </SourceMeasureGroup>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0c46ac87-1536-4cef-b449-dbad2f57f9f3">
+          <ID>Trans Detail ID</ID>
+          <Name>Trans Detail ID</Name>
+          <IsKey>true</IsKey>
+          <Type>Text</Type>
+          <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="efea302e-c2fc-4584-96b1-b36cc81ba76c">
+            <CubeID>TP1</CubeID>
+            <CubeDimensionID>Dimension Trans Detail</CubeDimensionID>
+            <AttributeID>Trans Detail ID</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Key</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1efc1729-cd33-47e6-bcd8-c842838ac5de">
+          <ID>Operation</ID>
+          <Name>Operation</Name>
+          <Type>Text</Type>
+          <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="7f89516d-c68c-4404-9f6a-69a6d070c9b4">
+            <CubeID>TP1</CubeID>
+            <CubeDimensionID>Dimension Trans Detail</CubeDimensionID>
+            <AttributeID>Operation</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discrete</Content>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ff603f2c-2760-4552-9af6-785ee7434bba">
+          <ID>Type</ID>
+          <Name>Type</Name>
+          <Type>Text</Type>
+          <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="21e589b9-e780-46ea-8339-1b25b2da3ac3">
+            <CubeID>TP1</CubeID>
+            <CubeDimensionID>Dimension Trans Detail</CubeDimensionID>
+            <AttributeID>Type</AttributeID>
+            <Type>All</Type>
+          </Source>
+          <Content>Discrete</Content>
+        </Column>
+      </Columns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="bee0c9b2-8822-4a9a-8adb-366cbf39813b">
+      <ID>Dimension Account</ID>
+      <Name>Dimension Account</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="09ecccc4-f80b-432d-b89d-34029a8b6432">
+          <ID>Account ID</ID>
+          <Name>Account ID</Name>
+          <SourceColumnID>Account ID</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="314678fe-c794-4147-8d6d-fc843871d9ad">
+          <ID>Amount</ID>
+          <Name>Amount</Name>
+          <SourceColumnID>Amount</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="4e6a895e-048b-4b06-8af4-fab5a086366e">
+          <ID>Avg Amount</ID>
+          <Name>Avg Amount</Name>
+          <SourceColumnID>Avg Amount</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="c701a1ff-aa9d-458e-8e56-553f934021ce">
+          <ID>Avg Amount - Fac Transaction</ID>
+          <Name>Avg Amount - Fac Transaction</Name>
+          <SourceColumnID>Avg Amount - Fac Transaction</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="48d22859-8e16-4cd0-9692-5883358e161f">
+          <ID>Count Of Order</ID>
+          <Name>Count Of Order</Name>
+          <SourceColumnID>Count Of Order</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="ccbc3320-764e-45c6-a90e-a24cfb09cc60">
+          <ID>Count Of Transaction</ID>
+          <Name>Count Of Transaction</Name>
+          <SourceColumnID>Count Of Transaction</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="b1fd268e-f084-41aa-85e8-3445fc63ba70">
+          <ID>Max Amount</ID>
+          <Name>Max Amount</Name>
+          <SourceColumnID>Max Amount</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="1a46e70d-9228-441d-a96b-b155e68dd5ad">
+          <ID>Min Amount</ID>
+          <Name>Min Amount</Name>
+          <SourceColumnID>Min Amount</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="ce8f6cda-a166-4abe-9128-5feb3b5c5848">
+          <ID>Payments</ID>
+          <Name>Payments</Name>
+          <SourceColumnID>Payments</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="feff62e2-52d4-43d1-8454-71548e1caf2e">
+          <ID>Sum Amount</ID>
+          <Name>Sum Amount</Name>
+          <SourceColumnID>Sum Amount</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="502b8bd9-670a-4781-9077-02b1b44a25cf">
+          <ID>Dimension Loan Detail</ID>
+          <Name>Dimension Loan Detail</Name>
+          <SourceColumnID>Dimension Loan Detail</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="f8089223-f8a9-4579-9b90-a898a36008ff">
+              <ID>Loan Detail ID</ID>
+              <Name>Loan Detail ID</Name>
+              <SourceColumnID>Loan Detail ID</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column dwd:design-time-name="751cdd23-6a0c-4103-88a4-38a0b5f987e6">
+              <ID>Status</ID>
+              <Name>Status</Name>
+              <SourceColumnID>Status</SourceColumnID>
+              <Usage>PredictOnly</Usage>
+            </Column>
+            <Column dwd:design-time-name="4f230101-98fa-46c1-aece-1efff3d53330">
+              <ID>Duration</ID>
+              <Name>Duration</Name>
+              <SourceColumnID>Duration</SourceColumnID>
+            </Column>
+          </Columns>
+        </Column>
+        <Column dwd:design-time-name="21b53052-39df-457f-8458-88cf2b899e7a">
+          <ID>Dimension Trans Detail</ID>
+          <Name>Dimension Trans Detail</Name>
+          <SourceColumnID>Dimension Trans Detail</SourceColumnID>
+          <Columns>
+            <Column dwd:design-time-name="831b9d98-d415-4b8f-a9e8-1077d627fc08">
+              <ID>Trans Detail ID</ID>
+              <Name>Trans Detail ID</Name>
+              <SourceColumnID>Trans Detail ID</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column dwd:design-time-name="182d44b7-6d79-49b9-a01f-22ef19c428a4">
+              <ID>Operation</ID>
+              <Name>Operation</Name>
+              <SourceColumnID>Operation</SourceColumnID>
+            </Column>
+            <Column dwd:design-time-name="06d176dc-9bad-400f-9d2c-68d1cad0cc9c">
+              <ID>Type</ID>
+              <Name>Type</Name>
+              <SourceColumnID>Type</SourceColumnID>
+            </Column>
+          </Columns>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+</MiningStructure>

@@ -1,0 +1,110 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bfc33d25-8bc1-434b-a6de-f6994a2bea26" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TP4</ID>
+  <Name>TP4</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>TP4</DataSourceID>
+  <Schema>
+    <xs:schema id="TP4" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="TP4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="ec634d99-f41f-4959-bccb-a29d6ef5609d">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_newtable" msprop:design-time-name="4cc2e600-120e-4866-b79b-1a7fca6eb27e" msprop:DbTableName="newtable" msprop:FriendlyName="newtable" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="13c513f6-593c-49fa-8554-34a958f87e0a" msprop:DbColumnName="ID" msprop:FriendlyName="ID" type="xs:int" />
+                  <xs:element name="Amount" msprop:design-time-name="c5b9cee0-0ee0-4734-9f6d-ab3a2c3b2572" msprop:DbColumnName="Amount" msprop:FriendlyName="Amount" type="xs:double" />
+                  <xs:element name="LoanPayments" msprop:design-time-name="18d74c5e-2896-46c7-84d2-6d4767a88883" msprop:DbColumnName="LoanPayments" msprop:FriendlyName="LoanPayments" type="xs:double" />
+                  <xs:element name="LoanStatus" msprop:design-time-name="9c8c7b88-0228-493c-a88c-9e52a54bb456" msprop:DbColumnName="LoanStatus" msprop:FriendlyName="LoanStatus">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LoanDuration" msprop:design-time-name="0343cab8-f28f-4363-a22b-f636f231226d" msprop:DbColumnName="LoanDuration" msprop:FriendlyName="LoanDuration" type="xs:int" />
+                  <xs:element name="districtName" msprop:design-time-name="1ca732c1-7a62-408a-b885-ad6674fa69c8" msprop:DbColumnName="districtName" msprop:FriendlyName="districtName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NumberOfPop" msprop:design-time-name="9918e33f-76b8-4c20-a655-d050f8be8dd9" msprop:DbColumnName="NumberOfPop" msprop:FriendlyName="NumberOfPop" type="xs:int" />
+                  <xs:element name="NoOfCity" msprop:design-time-name="2280104e-d303-48b4-9efe-220c3c00598d" msprop:DbColumnName="NoOfCity" msprop:FriendlyName="NoOfCity" type="xs:int" />
+                  <xs:element name="NoMunip" msprop:design-time-name="2f3efb5c-688f-4ae6-949b-cbdb65917488" msprop:DbColumnName="NoMunip" msprop:FriendlyName="NoMunip" type="xs:int" />
+                  <xs:element name="AverangeSalary" msprop:design-time-name="4433fce7-a4bc-43b6-813d-c20268dee03d" msprop:DbColumnName="AverangeSalary" msprop:FriendlyName="AverangeSalary" type="xs:double" />
+                  <xs:element name="regionName" msprop:design-time-name="7e15d1bf-55f1-416e-a639-70990b604f00" msprop:DbColumnName="regionName" msprop:FriendlyName="regionName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NoDay" msprop:design-time-name="700a45f7-8cb7-4fb7-ae2a-15cf9d7455bb" msprop:DbColumnName="NoDay" msprop:FriendlyName="NoDay" type="xs:int" />
+                  <xs:element name="NoMonth" msprop:design-time-name="01df4721-4844-4843-99d2-2fb9e3b83784" msprop:DbColumnName="NoMonth" msprop:FriendlyName="NoMonth" type="xs:int" />
+                  <xs:element name="NoYear" msprop:design-time-name="87cdff85-baa3-463c-ad78-aac03140b160" msprop:DbColumnName="NoYear" msprop:FriendlyName="NoYear" type="xs:int" />
+                  <xs:element name="DayOfWeek" msprop:design-time-name="f2ced1ce-83c1-49b3-a5eb-50cd8b39ffe7" msprop:DbColumnName="DayOfWeek" msprop:FriendlyName="DayOfWeek" type="xs:int" />
+                  <xs:element name="Trimester" msprop:design-time-name="082b416a-8507-4af1-998a-974004620688" msprop:DbColumnName="Trimester" msprop:FriendlyName="Trimester" type="xs:int" />
+                  <xs:element name="AccountCreateDate" msprop:design-time-name="fd78e32b-14b9-4fe0-9aef-f7120b4ddf88" msprop:DbColumnName="AccountCreateDate" msprop:FriendlyName="AccountCreateDate" type="xs:dateTime" />
+                  <xs:element name="AccountFrequency" msprop:design-time-name="e96e1987-9108-4e91-8352-22b90d582896" msprop:DbColumnName="AccountFrequency" msprop:FriendlyName="AccountFrequency">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CustommerBirth" msprop:design-time-name="4cfab01c-3aa1-40bd-b256-70ada990e8e0" msprop:DbColumnName="CustommerBirth" msprop:FriendlyName="CustommerBirth" type="xs:dateTime" />
+                  <xs:element name="CustommerSex" msprop:design-time-name="7b383d1d-130d-40fd-81f9-90efbba1e2b0" msprop:DbColumnName="CustommerSex" msprop:FriendlyName="CustommerSex">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <TP4 xmlns="" />
+  </Schema>
+</DataSourceView>

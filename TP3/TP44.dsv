@@ -1,0 +1,93 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9299b972-ff7c-483a-ac15-a74c116ff0a6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TP44</ID>
+  <Name>TP44</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>TP4</DataSourceID>
+  <Schema>
+    <xs:schema id="TP44" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="TP44" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="746acd22-80af-46db-b48d-4779dce3d4c6">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_newtable4" msprop:design-time-name="ea046296-af25-42f1-9ac3-9c41fa2c31f0" msprop:DbTableName="newtable4" msprop:FriendlyName="newtable4" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="72e96350-2ceb-498c-8b7e-ef77695a9be5" msprop:DbColumnName="ID" msprop:FriendlyName="ID" type="xs:int" />
+                  <xs:element name="SumAmount" msprop:design-time-name="0269b6af-5781-4092-8bfb-c8d274058413" msprop:DbColumnName="SumAmount" msprop:FriendlyName="SumAmount" type="xs:double" />
+                  <xs:element name="CountOfTransaction" msprop:design-time-name="4da4ea9a-e427-47ed-95f6-afc5469258ff" msprop:DbColumnName="CountOfTransaction" msprop:FriendlyName="CountOfTransaction" type="xs:int" />
+                  <xs:element name="AvgAmount" msprop:design-time-name="208f5f81-074b-44d7-a8e0-ef2e790d0bf2" msprop:DbColumnName="AvgAmount" msprop:FriendlyName="AvgAmount" type="xs:double" minOccurs="0" />
+                  <xs:element name="AverangeSalary" msprop:design-time-name="a0f70156-0861-4e69-b572-f5ee8264e77a" msprop:DbColumnName="AverangeSalary" msprop:FriendlyName="AverangeSalary" type="xs:double" />
+                  <xs:element name="nameRegion" msprop:design-time-name="c1538d04-8d97-477e-a4b6-1e38b200c31a" msprop:DbColumnName="nameRegion" msprop:FriendlyName="nameRegion">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="transSymbol" msprop:design-time-name="a2699fd1-6da4-4fe4-9481-6be9e901cc9d" msprop:DbColumnName="transSymbol" msprop:FriendlyName="transSymbol">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="transType" msprop:design-time-name="969dde5d-8216-4d34-abf3-3d8a0109a25c" msprop:DbColumnName="transType" msprop:FriendlyName="transType">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="6" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="accountFrequency" msprop:design-time-name="b97f9354-3ece-4fe5-9cac-0cb875fba2dd" msprop:DbColumnName="accountFrequency" msprop:FriendlyName="accountFrequency">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <TP44 xmlns="" />
+  </Schema>
+</DataSourceView>

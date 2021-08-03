@@ -1,0 +1,149 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>TP1</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-KGSM30P;Integrated Security=SSPI;Initial Catalog=TP1</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
+          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">DESKTOP-KGSM30P\Administrador</Account>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PasswordRemoved</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+      <DataSource>
+        <ID>TP4</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-KGSM30P;Integrated Security=SSPI;Initial Catalog=TP1</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
+          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">DESKTOP-KGSM30P\Administrador</Account>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PasswordRemoved</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Dimension Account</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dimension Card</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dimension Bank</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dimension Custommer</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dimension Date</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dimension Region</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dimension District</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dimension Loan Detail</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dimension Symbol Order</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dimension Symbol Trans</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dimension Trans Detail</ID>
+      </Dimension>
+    </Dimensions>
+    <MiningStructures>
+      <MiningStructure>
+        <ID>Dimension Account</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>Newtable3</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>Newtable3 1</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>arbolDecision-transType</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>arbolDecision-LoanStatusXRegion</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>Cluster-LoanStatus</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>Neives-LoanStatus</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>RedNeuronal-LoanStatus</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>Cluster-LoanMount</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>ArbolDeCISION-AMOUNTLOAN</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>Newtable</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>Newtable4</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>Newtable4 1</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>Newtable 1</ID>
+      </MiningStructure>
+      <MiningStructure>
+        <ID>Newtable2</ID>
+      </MiningStructure>
+    </MiningStructures>
+    <Cubes>
+      <Cube>
+        <ID>TP1</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fac Loan</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fac Loan</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fac Order</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fac Order</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fac Transaction</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fac Transaction</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Account Card</ID>
+            <Partitions>
+              <Partition>
+                <ID>Account Card</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>
